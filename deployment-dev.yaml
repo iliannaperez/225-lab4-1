@@ -46,7 +46,7 @@ spec:
     spec:
       containers:
         - name: flask
-          image: image: cithit/perezi3:build-34   #<------change this!!!!!
+          image: cithit/perezi3:build-34   #<------change this!!!!!
           ports:
             - containerPort: 5000
           volumeMounts:
