@@ -97,6 +97,5 @@ def index():
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
-    if not os.path.exists(DATABASE):
-        init_db()
+    init_db()  # Initialize the database and table
     app.run(debug=True, host='0.0.0.0', port=port)
